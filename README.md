@@ -88,3 +88,15 @@ After you have sent me your git repo link and I have given you the green light, 
 - While the container is running find a way to access the shell of the app.
 - Change your code to display a different dad joke every 15 seconds (forever), fetching your jokes from https://icanhazdadjoke.com/api. Check the documentation on that website.
 - Build and run the docker and check that you get a joke every 15 seconds.
+
+
+ANSWER
+![](doc//docker.jpg)
+
+
+
+What is the prerequisite for another machine to run your application if you provide it the docker image ? the main prerequisite for running a Docker image on another machine is that the machine should have Docker installed, and your Docker image should include everything necessary to run your application in a self-contained environment. 
+
+What is the difference between a virtual machine and a docker container ? The main difference between a virtual machine and a Docker container is that a virtual machine emulates an entire operating system and runs on top of a hypervisor, while a Docker container shares the host operating system kernel and runs on top of a container runtime. This fundamental difference in architecture makes Docker containers more lightweight, portable, and efficient compared to virtual machines.
+﻿
+
