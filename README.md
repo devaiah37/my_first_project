@@ -66,6 +66,7 @@ Others options for authentication are below :
 ## Adding functionnalities to your code
 1. Include this lib through maven : https://mvnrepository.com/artifact/org.alcibiade/asciiart-core
 2. Add code to convert a picture of your choice into ASCII character. For example I used the swiss flag and I got this output :
+
 ![](doc/sample_ascii_art_from_picture.png)
 3. Make a jar and run the jar to see if you have the same output. Check that link below to generate a jar which includes the maven dependencies :
  https://stackoverflow.com/questions/574594/how-can-i-create-an-executable-runnable-jar-with-dependencies-using-maven
@@ -86,8 +87,9 @@ Others options for authentication are below :
 
  ## Deliverable
  At the end of the README.md, add those following elements :
- - A screenshot of your docker image and docker running (from the command line)
- - A screenshot of your app output
+ - A screenshot of your app runing from IntelliJ
+ - A screenshot of your docker images 
+ - A screenshot of your app running in a docker container
  - Answer to those questions :
     - What is the prerequisite for another machine to run your application if you provide it the docker image ?
         - In term of Operating System, pre-installed app, etc...
