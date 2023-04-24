@@ -52,7 +52,11 @@ Others options for authentication are below :
 1. Follow https://www.jetbrains.com/help/idea/convert-a-regular-project-into-a-maven-project.html
     - If you encounter some issues during the procedure, try restarting IntelliJ IDEA.
 2. Generate the jar (as mentioned in the procedure)
-2. Execute your generated jar from the terminal (cmd or other), check that "Hello World" is displayed
+3. Execute your generated jar from the terminal (cmd or other), check that "Hello World" is displayed
+    - If you encounter some issue such as "com.nagra.MyApp" not found. Add this section in the build section of pom.xml for maven to identify your source code location:
+    
+           <sourceDirectory>main/src</sourceDirectory>
+     
 
 ## Building a docker running your code
 1. Build a docker image that will run your code, include your first name in the docker image.
@@ -65,9 +69,18 @@ Others options for authentication are below :
 ![](doc/sample_ascii_art_from_picture.png)
 3. Make a jar and run the jar to see if you have the same output. Check that link below to generate a jar which includes the maven dependencies :
  https://stackoverflow.com/questions/574594/how-can-i-create-an-executable-runnable-jar-with-dependencies-using-maven
+    - In a similar fashion as "Making your project a maven and make a jar" you might need to add this section in build part of pom.xml for maven to identify your resources file and package it in the jar.
+
+
+            <resources>
+                <resource>
+                    <directory>main/resources</directory>
+                </resource>
+            </resources>
+
 4. Re-build a docker image with the latest jar you have created and run the docker container to verify that your app is properly running.
 
-## Sharing your image through a docker registry
+## Sharing your docker image through a docker registry
 1. Share your image to another person through dockerhub: https://docs.docker.com/get-started/04_sharing_app/
 2. Ask that person to pull that image and run it, and compare the behavior of your container locally and the one running on your partner. The behavior should be the same.
 
