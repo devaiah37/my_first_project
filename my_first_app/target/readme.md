@@ -1,11 +1,11 @@
 DOCKER IMAGES
-![DockerImages](https://user-images.githubusercontent.com/129824904/234293058-f3fa6d8a-4012-4164-96fc-8881ce008891.png)
+![DockerImages](C:\Devaiah37\doc\deliverables\DockerImages.png)
 
 DOCKER CONTAINER RUNNING
-<img width="960" alt="dockerRun" src="https://user-images.githubusercontent.com/129824904/234293073-b46b9126-176b-4963-ad31-63730c4715a9.PNG">
+<img alt="dockerRun" src="C:\Devaiah37\doc\deliverables\dockerRun.PNG" width="960"/>
 
 MyApp.java OUTPUT
-![AppOutput](https://user-images.githubusercontent.com/129824904/234293075-47a0303f-740a-4459-b90b-c4a5694ed1db.png)
+![AppOutput](C:\Devaiah37\doc\deliverables\AppOutput.png)
 
 **1)What is the prerequisite for another machine to run your application if you provide it the docker image ?**
 To run a Docker image on another machine, the machine must have the Docker Engine installed, which is available for different operating systems such as Windows, macOS, and Linux. The machine should also have enough resources like CPU, memory, and disk space to run the container. The resource requirements depend on the application and its dependencies.
